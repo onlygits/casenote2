@@ -19,7 +19,6 @@ regex==2024.4.28
 requests==2.31.0
 scikit-learn==1.5.2
 streamlit==1.39.0
-tiktoken==0.6.0
 toml==0.10.2
 urllib3==2.2.1
 utility==1.0
