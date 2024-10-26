@@ -4,7 +4,7 @@ langchain==0.2.15  # Adjusted, assuming compatibility
 langchain-chroma==0.1.3  # Adjusted, assuming compatibility
 langchain-community==0.2.15  # Adjusted, assuming compatibility
 langchain-core==0.2.37  # Adjusted to a version <0.2.0
-langchain-openai==0.2.3
+langchain-openai==0.1.22
 langchain-text-splitters==0.2.4
 langchainhub==0.1.15
 langsmith==0.1.136
