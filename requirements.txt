@@ -1,6 +1,5 @@
 ﻿chroma-hnswlib
 chromadb
-hnswlib
 langchain
 langchain-chroma
 langchain-community
