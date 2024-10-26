@@ -124,7 +124,7 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.pydantic_v1 import BaseModel, Field
+from pydantic import BaseModel, Field
 import uuid
 from langchain_chroma import Chroma
 import pandas as pd
