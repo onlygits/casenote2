@@ -317,9 +317,19 @@ selected_page = st.session_state.current_page
 if selected_page == "Case Note Generator":
     st.title("Case Note Generator")
 
-    # Instruction for privacy
-    st.markdown("""
-    **Important:** Please do not enter any personally identifying information about the youths or their families in the form below. This includes names, identification numbers, or specific personal details.
+    # Disclaimer Section
+    with st.expander("IMPORTANT NOTICE", expanded=False):
+    st.write("""
+    **IMPORTANT NOTICE:** Please do not enter any personally identifying information about the youths or their families in the form below. This includes names, identification numbers, or specific personal details.
+    
+    This web application is developed as a proof-of-concept prototype. 
+    The information provided here is **NOT intended for actual usage** and should not be relied upon 
+    for making any decisions, especially those related to financial, legal, or healthcare matters.
+    
+    Furthermore, please be aware that the LLM may generate inaccurate or incorrect information. 
+    You assume full responsibility for how you use any generated output.
+    
+    Always consult with **qualified professionals** for accurate and personalized advice.
     """)
 
     with st.form("Case Note Form"):
