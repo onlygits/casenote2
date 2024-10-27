@@ -307,7 +307,7 @@ if 'current_page' not in st.session_state:
 
 st.sidebar.title("Navigation")
 
-pages = ["Case Note Generator", "Resource Search Engine", "About Us", "Methodology"]
+pages = ["Case Note Generator", "Resource Search Engine", "About Me", "Methodology"]
 for page in pages:
     if st.sidebar.button(page):
         set_page(page)
@@ -392,9 +392,9 @@ elif selected_page == "Resource Search Engine":
             st.error(f"An error occurred: {e}")
 
 
-elif selected_page == "About Us":
+elif selected_page == "About Me":
 
-    st.title("About Us")
+    st.title("About Me")
     
     # Introduction or summary
     st.markdown("""
@@ -438,6 +438,12 @@ elif selected_page == "About Us":
     ### Data Classification & Sensitivity
     **Classification:** Restricted / Non-sensitive\n
     However, currently, only dummy data is used.\n
+    """)
+
+    # Project Source Code
+    st.markdown("""
+    ### Project Source Code
+    [GitHub Repository](https://github.com/onlygits/casenote2)
     """)
 
 elif selected_page == "Methodology":
