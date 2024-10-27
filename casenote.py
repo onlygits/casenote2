@@ -400,7 +400,7 @@ elif selected_page == "Resource Search Engine":
                 # Suggested Next Steps
                 st.subheader("Suggested Next Steps:")
                 suggestions = llm.invoke(
-                    f"""Based on the user query: '{query}' and the answer provided below from our resources, suggest appropriate next steps or other related questions the user can ask.
+                    f"""Based on the user query: '{query}' and the answer provided below from our resources for caseworkers working with youths in our residential home, suggest appropriate next steps for the caseworker.
                     The answer is delimited by '###'.
                     ###
                     {response_model.summary.answer}
