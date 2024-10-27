@@ -407,7 +407,7 @@ elif selected_page == "Resource Search Engine":
                     ###
                     """
                 )
-                st.write(suggestions.answer)
+                st.write(suggestions.content)
             else:
                 st.warning("The query is unrecognized or irrelevant. Please try rephrasing")
         except Exception as e:
