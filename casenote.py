@@ -427,7 +427,7 @@ elif selected_page == "About Me":
     # Problem Statement
     st.markdown("""
     ### Problem Statement
-    Due to time constraints and ongoing operational needs, it is difficult for caseworkers at Youth homes to continuously document their sessions in the online system. This might lead to a backlog of case notes to be input into the system while they might have their notes written elsewhere or in point form. Additionally, based on what comes up during the session, caseworker might want to quickly look up relevant resources since currently there is not one designated place and there are a lot of documents to sieve through.
+    Due to time constraints and ongoing operational needs, it is difficult for caseworkers at Youth homes to continuously document their sessions in the online system. This might lead to a backlog of case notes to be input into the system while they might have their notes written elsewhere or in point form. Additionally, based on what comes up during the session, caseworker might want to quickly look up relevant resources since currently there is not one designated place and there are a lot of documents to sieve through. Based on resource found, suggested next steps are provided for the caseworker.
     """)
 
     # Proposed Solution
@@ -477,7 +477,7 @@ elif selected_page == "Methodology":
     This section describes the methodologies used in the development of the two main components of this application:\n\n
     
     1. **Case Notes Generator**: Utilizes GPT 3.5 model to generate detailed case notes based on minimal user inputs.\n
-    2. **Resource Search Engine**: Leverages on langchain and GPT 3.5 to retrieve and display resources relevant to caseworkers.\n
+    2. **Resource Search Engine**: Leverages on langchain and GPT 3.5 to retrieve and display resources relevant to caseworkers' queries and then suggest next steps based on the answer found.\n
     """)
     
     # Displaying the methodology diagram for Case Notes Generator
