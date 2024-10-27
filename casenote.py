@@ -320,7 +320,7 @@ if selected_page == "Case Note Generator":
     # Disclaimer Section
     with st.expander("IMPORTANT NOTICE", expanded=False):
         st.write("""
-        **IMPORTANT NOTICE:** Please do not enter any personally identifying information about the youths or their families in the form below. This includes names, identification numbers, or specific personal details.
+        Please do not enter any personally identifying information about the youths or their families in the form below. This includes names, identification numbers, or specific personal details.
         
         This web application is developed as a proof-of-concept prototype. 
         The information provided here is **NOT intended for actual usage** and should not be relied upon 
