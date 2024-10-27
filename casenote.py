@@ -396,8 +396,20 @@ elif selected_page == "Resource Search Engine":
                 }
                 df = pd.DataFrame([response_data])
                 st.table(df)
+
+                # Suggested Next Steps
+                st.subheader("Suggested Next Steps:")
+                suggestions = llm.invoke(
+                    f"""Based on the user query: '{query}' and the answer provided below from our resources, suggest appropriate next steps or other related questions the user can ask.
+                    The answer is delimited by '###'.
+                    ###
+                    {response_model.summary.answer}
+                    ###
+                    """
+                )
+                st.write(suggestions.answer)
             else:
-                st.write("The query is unrecognized or irrelevant.")
+                st.warning("The query is unrecognized or irrelevant. Please try rephrasing")
         except Exception as e:
             st.error(f"An error occurred: {e}")
 
